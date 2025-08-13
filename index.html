@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Analyzer</h1>
+        <p>Enter a password to analyze its strength for penetration testing.</p>
+        
+        <div class="input-group">
+            <input type="password" id="passwordInput" placeholder="Enter password...">
+            <button id="analyzeBtn">Analyze</button>
+        </div>
+        
+        <div id="result" class="hidden">
+            <h2>Analysis Results</h2>
+            <div id="strengthResult"></div>
+            <div id="entropyResult"></div>
+            <div id="commonResult"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
